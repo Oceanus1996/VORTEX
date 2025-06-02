@@ -4,8 +4,8 @@ This repository contains the official code and dataset for the paper:
 
 ## Directory Structure
 
-project-root/
-│
+project-root
+|
 ├── README.md                              
 ├── .gitignore    
 │
