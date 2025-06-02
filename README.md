@@ -4,22 +4,16 @@ This repository contains the official code and dataset for the paper:
 
 ## Directory Structure
 
-project-root//
-|
-├── README.md                              
-├── .gitignore    
-│
-├── data/                   
-│   ├── README.md           
-│   ├── raw/             
-│   └── processed/         
-│
-├── src/                   
-│ 
-│   ├── vr_auto_detect.py
-│   └── ...            
-│
-└── requirements.txt    
+project-root/
+├── README.md
+├── .gitignore
+├── requirements.txt
+├── data/
+│   ├── README.md
+│   ├── raw/
+│   └── processed/
+└── src/
+    ├── vr_auto_detect.py  
 
 ## Reproduction Instructions
 Install dependencies listed in requirements.txt. (Includes HuggingFace libraries; alternatively, you may configure GroundingDINO manually.)
