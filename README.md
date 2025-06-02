@@ -3,7 +3,7 @@ This repository contains the official code and dataset for the paper:
 "Virtual Vision, Real Bugs: Characterizing and Detecting Visualization Bugs in VR Applications."
 
 ## Directory Structure
-
+```
 project-root/
 ├── README.md
 ├── .gitignore
@@ -14,7 +14,7 @@ project-root/
 │   └── processed/
 └── src/
     ├── vr_auto_detect.py  
-
+```
 ## Reproduction Instructions
 Install dependencies listed in requirements.txt. (Includes HuggingFace libraries; alternatively, you may configure GroundingDINO manually.)
 
