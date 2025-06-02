@@ -3,6 +3,7 @@ This repository contains the official code and dataset for the paper:
 "Virtual Vision, Real Bugs: Characterizing and Detecting Visualization Bugs in VR Applications."
 
 ## Directory Structure
+
 project-root/
 │
 ├── README.md                              
