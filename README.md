@@ -6,18 +6,16 @@ This repository contains the official code and dataset for the paper:
 ```
 project-root/
 ├── README.md
+├── data/
+│   ├── RQ1&RQ2/
+│   │   ├── visible_objects.xlsx    # have 16 files of it 
+│   │   └── name_num.txt
+│   └── RQ3/
+│       ├── BYPROJECT/  #VB by project
+│       ├── v1/ #VB1
+│       ├── v2/  #VB2
+│       └── ... v3/   #VB3
 └──  VORTEX
-    ├── data/
-    │   ├── RQ1&RQ2/
-    │   │   ├── visible_objects.xlsx    # have 16 files of it 
-    │   │   └── name_num.txt
-    │   │  
-    │   ├── RQ3/
-    │   │   ├── BYPROJECT/  #VB by project
-    │   │   ├── v1/ #VB1
-    │   │   ├── v2/  #VB2
-    │   │   ├── v3/   #VB3
-    │   │   └── ...
     ├── Driver/
     │   ├── simplecontroller/
     │   └── VR_Driver_Directory/
