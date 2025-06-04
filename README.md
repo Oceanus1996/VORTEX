@@ -28,11 +28,9 @@ Run src/vr_auto_detect.py (the main entry point). If you run this task within a 
 
   
 
-# SimpleController
+## Driver
 
-Windows controller driver project.
-
-## Project Structure
+openvr-driver in virtual driver injection module, after this step set succcessfully, you will see a virtual controller shown in SteamVR interface
 
 ### Source Code
 ```
@@ -60,7 +58,7 @@ simplecontroller/
 └── driver.vrdrivermanifest             
 ```
 
-## Build Steps
+### Build Dll File
 
 1. Open `simplecontroller.vcxproj` project file in Visual Studio
 2. Select target platform:
@@ -73,8 +71,6 @@ simplecontroller/
    - `x64/` directory for 64-bit build
 
 This step generates the necessary DLL files that serve as the foundation for the VR controller driver.
-
-## Driver Deployment
 
 ### Build Output Structure
 After compilation, the following files are generated:
