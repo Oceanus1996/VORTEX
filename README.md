@@ -7,7 +7,6 @@ This repository contains the official code and dataset for the paper:
 project-root/
 ├── README.md
 └──  VORTEX
-    ├── requirements.txt
     ├── data/
     │   ├── RQ1&RQ2/
     │   │   ├── visible_objects.xlsx    # have 16 files of it 
@@ -22,7 +21,7 @@ project-root/
     ├── Driver/
     │   ├── simplecontroller/
     │   └── VR_Driver_Directory/
-    └── src/
+    └── VR_Detect/
         ├── cam_pos_st.py           # Utilities for acquiring/converting HMD/controller poses and coordinates
         ├── indle.py                # Performs depth estimation (MiDaS) and computes object distances
         ├── remapping_motion.py     # Controller movement, command generation, and remapping logic
