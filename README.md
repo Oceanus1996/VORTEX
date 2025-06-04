@@ -15,20 +15,42 @@ project-root/
 └── src/
     ├── vr_auto_detect.py  
 ```
-## Reproduction Instructions
-Install dependencies listed in requirements.txt. (Includes HuggingFace libraries; alternatively, you may configure GroundingDINO manually.)
+# Setup Instructions
 
-Set up the SteamVR developer environment.
+## Create and Activate Conda Environment
 
-Compile the virtual controller driver to generate a DLL file. Select the appropriate version and place the DLL in steam/steamapp/steamvr/driver/. Once configured, you should see a virtual controller named simplecontroller appear in your SteamVR interface or console.
+```bash
+conda env create -f environment.yml
+conda activate dino_new
+```
+(You can customize the environment name as needed. Includes HuggingFace libraries. For custom GroundingDINO setup, configure environment manually)
 
-Use OBS to capture the 2D visual stream from SteamVR. If you use other methods to obtain the video stream, please modify the corresponding functions in the code.
+## Configure SteamVR Development Environment
 
-Run src/vr_auto_detect.py (the main entry point). If you run this task within a Unity project, please ensure the project integrates SteamVR and has the correct entry point configured.
+Ensure SteamVR is correctly installed and working on your system.
 
-  
+## Compile Virtual Controller Driver
 
-## Driver
+Build the simplecontroller driver DLL with Visual Studio. See the "driver setup" section in this repository for detailed configuration and placement instructions.
+
+## Prepare Video Stream
+
+Use OBS software to capture the 2D video stream from SteamVR. If using alternative capture methods, modify the video acquisition function in the code.
+
+## Run Main Entry Script
+
+```bash
+python src/vr_auto_detect.py
+```
+
+This script is the main entry point for automated detection and control.
+
+## (Optional) Unity Integration
+
+If integrating with Unity projects, ensure SteamVR is properly integrated and the correct script entry point is configured.
+
+
+## Setup Driver
 
 openvr-driver in virtual driver injection module, after this step set succcessfully, you will see a virtual controller shown in SteamVR interface
 
