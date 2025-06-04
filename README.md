@@ -6,14 +6,31 @@ This repository contains the official code and dataset for the paper:
 ```
 project-root/
 ├── README.md
-├── .gitignore
-├── requirements.txt
-├── data/
-│   ├── README.md
-│   ├── raw/
-│   └── processed/
-└── src/
-    ├── vr_auto_detect.py  
+└──  VORTEX
+    ├── requirements.txt
+    ├── data/
+    │   ├── RQ1&RQ2/
+    │   │   ├── visible_objects.xlsx    # have 16 files of it 
+    │   │   └── name_num.txt
+    │   │  
+    │   ├── RQ3/
+    │   │   ├── BYPROJECT/  #VB by project
+    │   │   ├── v1/ #VB1
+    │   │   ├── v2/  #VB2
+    │   │   ├── v3/   #VB3
+    │   │   └── ...
+    ├── Driver/
+    │   ├── simplecontroller/
+    │   └── VR_Driver_Directory/
+    └── src/
+        ├── cam_pos_st.py           # Utilities for acquiring/converting HMD/controller poses and coordinates
+        ├── indle.py                # Performs depth estimation (MiDaS) and computes object distances
+        ├── remapping_motion.py     # Controller movement, command generation, and remapping logic
+        ├── reprojection.py         #  reprojection and first-frame calibration/correction
+        ├── script_st.py            # Inter-process communication with drives
+        ├── vr_auto_detect.py       # Main entry: automated object detection, tracking, and VR controller interaction
+        └── environment.yml         # Conda environment configuration for reproducible setup
+
 ```
 # Setup Instructions
 
