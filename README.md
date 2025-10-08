@@ -27,6 +27,9 @@ project-root/
         ├── script_st.py            # Inter-process communication with drives
         ├── vr_auto_detect.py       # Main entry: automated object detection, tracking, and VR controller interaction
         └── environment.yml         # Conda environment configuration for reproducible setup
+└── detection and taxonomy/
+    ├── detection/                  # detection for all categories
+    └── taxonomy/                   # the code for taxonomy divided
 
 ```
 # Setup Instructions
